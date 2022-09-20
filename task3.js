@@ -4,4 +4,4 @@ const alertString = (arr) => {
     console.log(arr.pop());
   }
 };
-alertString(arr)
+alertString(arr);
