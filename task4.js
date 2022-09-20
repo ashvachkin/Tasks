@@ -6,4 +6,5 @@ const fib = (n) => {
   }
   return fibArr;
 };
+
 console.log(fib(10));

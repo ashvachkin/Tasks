@@ -1,5 +1,6 @@
 const newArr = [];
 const arr = [6, 4, 8, -2, 6, 8, -1, 7, 8, 8, -9, 3, 5];
+
 const filterPositive = (arr) => {
   arr.forEach((value) => {
     if (value > 0) {

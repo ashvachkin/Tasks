@@ -4,6 +4,7 @@ const arr = [
   { a: 4, b: 7, c: 4 },
   { a: 2, b: 2, c: 3 },
 ];
+
 const perimeter = (arr) => {
   const newArr = [];
   arr.forEach((elem) => {
@@ -14,4 +15,5 @@ const perimeter = (arr) => {
   });
   return newArr;
 };
+
 console.log(perimeter(arr));
