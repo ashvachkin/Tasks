@@ -1,3 +1,5 @@
+//Имеется массив пользователей вида [{ name: “Ivan”, age: 24 }]. Вывести суммарный возраст всех пользователей.
+
 const arr = [{ name: "Ivan", age: 24 }, { name: "Oleg", age: 16}, { name: "Igor", age: 24}]
 
 const sumAge = (arr) => {
