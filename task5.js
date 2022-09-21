@@ -10,6 +10,7 @@ const arr = [
 
 const perimeter = (arr) => {
   const newArr = [];
+
   arr.forEach((elem) => {
     const newItem = {
       p: elem.a + elem.b + elem.c,

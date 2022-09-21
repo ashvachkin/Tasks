@@ -10,7 +10,7 @@ const trascations = [
 const findMid = (arr) => {
   const newArr = [];
   let mid = 0;
-  arr.map((item) => {
+  arr.forEach((item) => {
     mid += item.amount;
   });
   mid /= arr.length;

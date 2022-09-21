@@ -5,10 +5,11 @@ const arr = [
   { name: "Oleg", age: 16 },
   { name: "Igor", age: 24 },
 ];
+const maxAge = 18
 
 const sortByAge = (arr) => {
   arr.forEach((elem) => {
-    if (elem.age > 18) {
+    if (elem.age > maxAge) {
       console.log(elem.name);
     }
   });
