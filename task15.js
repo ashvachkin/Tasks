@@ -17,4 +17,5 @@ const result = (arr, filter, trasform) => {
 
   filteredArr.forEach((item) => console.log(trasform(item)));
 };
+
 result(arr, filter, trasform);

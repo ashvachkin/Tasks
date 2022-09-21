@@ -11,4 +11,5 @@ const split = (name) => {
   };
   console.log(splitedName);
 };
+
 split(userName);
