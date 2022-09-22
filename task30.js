@@ -24,9 +24,9 @@ const user = {
   age: 13,
 };
 
-const deletePassword = (user) =>{
-delete user.password
-return user
-}
+const deletePassword = (user) => {
+  delete user.password;
+  return user;
+};
 
 console.log(deletePassword(user));
