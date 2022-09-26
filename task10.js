@@ -7,14 +7,14 @@ const findDuplicates = (arr1, arr2) => {
   const newArr = [];
 
   for (let i = 0; i < arr1.length; i++) {
-    let flag = false;
+    let flagInLoop = false;
     for (let j = 0; j < arr2.length; j++) {
       if (arr1[i] === arr2[j]) {
-        flag = true;
+        flagInLoop = true;
         break;
       }
     }
-    if (flag === false) {
+    if (flagInLoop === false) {
       newArr.push(arr1[i]);
     }
   }
