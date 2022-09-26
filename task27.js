@@ -7,9 +7,7 @@ const arr = [
 ];
 
 const concatArr = (arr) => {
-  let newArr = [];
-  arr.forEach((item) => (newArr = newArr.concat([...item])));
-  console.log(newArr);
+  arr.forEach((item) => arr.concat([...item]));
+  return arr.flat();
 };
-
-concatArr(arr);
+console.log(concatArr(arr));
