@@ -23,8 +23,7 @@ const user = {
 };
 
 const userProp = (user) => {
-  let firstName = { ...user }.first_name;
-  let lastName = { ...user }.last_name;
+  let { first_name: firstName, last_name: lastName } = user;
   console.log(firstName, lastName);
 };
 
