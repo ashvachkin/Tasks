@@ -22,25 +22,27 @@
 
 //    URL может быть любой длины, но формат всегда будет {protocol}://{hostname}/path/path/…/path
 
-const urlAdress = "https://www.google.com/doodles/rubiks-cube";
+const urlAdress = "https://www.google.com/doodles/rubiks-cube/ASD/ASD/ASD/ASD/ASD/ASD/AS/DA/SD/DA";
 const splitUrl = (adress) => {
   let protocolSplit = adress.split("://");
   let fullSplit = protocolSplit[1].split("/");
 
-  const funk = (index = 1) => {
+  const createNestedObj = (index = 1) => {
     if (index < fullSplit.length) {
       const temp = {
         path: fullSplit[index],
       };
-      if (index + 1 < fullSplit.length) temp.child = funk(index + 1);
-      return temp;
+      if (index + 1 < fullSplit.length) {
+        temp.child = createNestedObj(index + 1);
+        return temp;
+      }
     }
   };
-  
+
   let adressProperties = {
     protocol: protocolSplit[0],
     hostname: fullSplit[0],
-    child: funk(),
+    child: createNestedObj(),
   };
   return adressProperties;
 };
