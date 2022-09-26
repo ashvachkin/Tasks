@@ -15,3 +15,5 @@ const multiply = (obj) => {
   }
   return obj;
 };
+
+console.log(multiply(startObj));
