@@ -6,13 +6,12 @@ const changeStr = (str) => {
   let splitedStr = str.split("");
   if (str.slice(0, 3) === "abc") {
     splitedStr.splice(0, 3, "www");
-    let result = splitedStr.join("");
     return result;
   } else {
     splitedStr.push("zzz");
-    let result = splitedStr.join("");
-    return result;
   }
+  let result = splitedStr.join("");
+  return result;
 };
 
 console.log(changeStr(str));

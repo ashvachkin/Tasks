@@ -11,28 +11,20 @@ const arr = [
   { name: "test1", age: 54, country: "RF" },
 ];
 
-const sortArr = (arr, direction) => {
-  if (direction) {
-    for (let j = arr.length - 1; j > 0; j--) {
-      for (let i = 0; i < j; i++) {
-        if (arr[i].age > arr[i + 1].age) {
-          let temp = arr[i].age;
-          arr[i].age = arr[i + 1].age;
-          arr[i + 1].age = temp;
-        }
-      }
-    }
-  } else if (direction === "desc") {
-    for (let j = arr.length - 1; j > 0; j--) {
-      for (let i = 0; i < j; i++) {
-        if (arr[i].age < arr[i + 1].age) {
-          let temp = arr[i].age;
-          arr[i].age = arr[i + 1].age;
-          arr[i + 1].age = temp;
-        }
+const sortArr = (arr, prop, direction) => {
+  for (let j = arr.length - 1; j > 0; j--) {
+    for (let i = 0; i < j; i++) {
+      if (arr[i][prop] > arr[i + 1][prop]) {
+        let temp = arr[i][prop];
+        arr[i][prop] = arr[i + 1][prop];
+        arr[i + 1][prop] = temp;
       }
     }
   }
+  if (direction === "desc") {
+    return arr.reverse();
+  }
   return arr;
 };
-console.log(sortArr(arr, "asc"));
+
+console.log(sortArr(arr, "age", "desc"));
