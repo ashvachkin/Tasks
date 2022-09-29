@@ -3,10 +3,12 @@
 
 const fillArr = (num) => {
   let newArr = [];
+  let newStr = ""
   for (let i = 1; i <= num; i++) {
-    newArr.push("x".repeat(i));
+    newStr+="x"
+    newArr.push(newStr)
   }
   return newArr;
 };
 
-console.log(fillArr(10));
+console.log(fillArr(20));
