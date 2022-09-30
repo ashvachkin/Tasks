@@ -12,11 +12,13 @@ const sortArr = (arr, min, max) => {
   let newArr = [];
   arr.sort((a, b) => a - b);
   for (let i = 0; i < arr.length; i++) {
+    min === null ? (min = -Infinity) : min;
+    max === null ? (max = Infinity) : max;
     if (arr[i] <= max && arr[i] >= min) {
       newArr.push(arr[i]);
     }
   }
 
-  return newArr.flat();
+  return newArr;
 };
-console.log(sortArr(arr, 1, 10));
+console.log(sortArr(arr, null, 10));
