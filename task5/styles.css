@@ -1,0 +1,36 @@
+.comment {
+  border: 1px solid black;
+  height: 30px;
+  max-width: 200px;
+  text-align: center;
+  display: flex;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  outline: none;
+}
+.comment:hover {
+  -webkit-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.11);
+  -moz-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.11);
+  box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.11);
+  color: #b25346;
+  background-color: #f6f8eb;
+}
+.comment__link {
+  font-size: large;
+}
+.comment-button:link {
+  text-decoration: none;
+}
+
+.comment-button:visited {
+  text-decoration: none;
+}
+
+.comment-button:hover {
+  text-decoration: none;
+}
+
+.comment-button:active {
+  text-decoration: none;
+}
