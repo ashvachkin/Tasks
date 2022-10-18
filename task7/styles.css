@@ -13,11 +13,13 @@ body {
   height: 243px;
   margin-left: -650px;
   transition: margin-left 1s;
+  position: absolute;
+  z-index: 2;
 }
 .side:hover {
   margin-left: 0;
 }
-.side-text {
+.side__text {
   color: white;
   font-size: x-large;
 }
@@ -25,7 +27,7 @@ body {
   width: 300px;
   height: 243px;
 }
-.side-transit {
+.side__transit {
   display: flex;
   gap: 10px;
 }

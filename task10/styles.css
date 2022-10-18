@@ -89,7 +89,7 @@ body {
 .pizza__add:hover {
   background-color: #cecece;
 }
-#pizza-photo {
+.pizza__photo {
   max-width: 255px;
   height: 249px;
   object-fit: cover;
@@ -107,7 +107,7 @@ body {
   .pizza__img {
     margin-right: 10px;
   }
-  #pizza-photo {
+  .pizza__photo {
     max-width: 155px;
   }
 }
@@ -122,7 +122,7 @@ body {
   .pizza__img {
     margin-right: 50px;
   }
-  #pizza-photo {
+  .pizza__photo {
     max-width: 250px;
   }
 }
@@ -134,7 +134,7 @@ body {
   .pizza {
     max-width: 575px;
   }
-  #pizza-photo {
+  .pizza__photo {
     max-width: 300px;
   }
 }
@@ -150,7 +150,7 @@ body {
     gap: 6px;
     max-width: 300px;
   }
-  #pizza-photo {
+  .pizza__photo {
     max-width: 300px;
   }
 }

@@ -55,17 +55,8 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 52px;
 }
-.snowy:hover {
-  -webkit-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);
-  -moz-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);
-  box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);
-}
-.cloudy:hover {
-  -webkit-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);
-  -moz-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);
-  box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);
-}
-.rainy:hover {
+
+.weather__element:hover {
   -webkit-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);
   -moz-box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);
   box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.78);

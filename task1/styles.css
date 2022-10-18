@@ -27,16 +27,7 @@
   height: 45px;
   width: 1%;
 }
-.red {
-  display: flex;
-  align-items: center;
-}
-.orange {
-  display: flex;
-  align-items: center;
-}
-
-.green {
+.batteries__element {
   display: flex;
   align-items: center;
 }

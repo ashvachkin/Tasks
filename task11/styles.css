@@ -1,9 +1,9 @@
-#left-pic {
+.left-pic {
   width: 554px;
   height: 591px;
   object-fit: cover;
 }
-#right-pic {
+.right-pic {
   width: 208px;
   height: 225px;
   object-fit: cover;
@@ -63,11 +63,11 @@ a:visited {
   color: whitesmoke;
 }
 @media (max-width: 1200px) {
-  #left-pic {
+  .left-pic {
     width: 503px;
     height: 536px;
   }
-  #right-pic {
+  .right-pic {
     width: 188px;
     height: 202px;
   }
@@ -83,11 +83,11 @@ a:visited {
     background: linear-gradient(180deg, #292d33 90%, rgb(255, 255, 255) 5%);
     height: fit-content;
   }
-  #left-pic {
+  .left-pic {
     width: 720px;
     height: 758px;
   }
-  #right-pic {
+  .right-pic {
     width: 345px;
     height: 365px;
   }
@@ -118,11 +118,11 @@ a:visited {
     background: linear-gradient(180deg, #292d33 91%, rgb(255, 255, 255) 5%);
     height: fit-content;
   }
-  #left-pic {
+  .left-pic {
     width: 540px;
     height: 561px;
   }
-  #right-pic {
+  .right-pic {
     width: 540px;
     height: 563px;
   }
@@ -138,11 +138,11 @@ a:visited {
   }
 }
 @media (max-width: 575px) {
-  #left-pic {
+  .left-pic {
     width: 340px;
     height: 342px;
   }
-  #right-pic {
+  .right-pic {
     width: 340px;
     height: 343px;
   }

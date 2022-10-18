@@ -8,7 +8,7 @@
   width: 150px;
   background-color: grey;
 }
-#pag-element {
+.pag-element {
   border-radius: 50%;
   display: flex;
   text-align: center;
@@ -18,23 +18,16 @@
   align-items: center;
   justify-content: center;
 }
-.one {
+
+.pag__completed {
   background-color: #b9d152;
   color: white;
 }
-.two {
-  background-color: #b9d152;
-  color: white;
-}
-.three {
-  background-color: #b9d152;
-  color: white;
-}
-.four {
+.pag__current {
   background-color: #a05199;
   color: white;
 }
-.five {
+.pag__incompleted {
   background-color: #cdcdcd;
 
   color: black;
