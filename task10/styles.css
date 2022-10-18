@@ -50,7 +50,7 @@ body {
 .pizza__img {
   margin-right: 50px;
 }
-.pizza-text {
+.pizza__text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
