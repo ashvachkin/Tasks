@@ -47,6 +47,7 @@ body {
   font-size: 0.875rem;
   width: 130.41px;
   height: 46.39px;
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .card {
@@ -67,6 +68,9 @@ body {
   #future {
     margin-right: 374px;
   }
+  .cards {
+    margin-bottom: 100px;
+  }
 }
 @media (max-width: 767px) {
   .card {
@@ -75,6 +79,10 @@ body {
   }
   #future {
     margin-right: 284px;
+  }
+  .full {
+    background-position: 76% 50%;
+    height: fit-content;
   }
 }
 @media (max-width: 575px) {
@@ -89,6 +97,6 @@ body {
     margin-top: 325px;
   }
   .full {
-    height: fit-content;
+    background-position: 63% 50%;
   }
 }
