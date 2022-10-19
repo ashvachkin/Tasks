@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .full {
   background-image: url("images/asd-min.jpg");
   height: 100%;
@@ -59,6 +62,7 @@
   .cards {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 100px;
   }
   #future {
     margin-right: 374px;
@@ -80,5 +84,11 @@
   }
   #future {
     margin: 0;
+  }
+  .cards {
+    margin-top: 325px;
+  }
+  .full {
+    height: fit-content;
   }
 }
