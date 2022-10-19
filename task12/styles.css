@@ -49,6 +49,9 @@ body {
   height: 46.39px;
   cursor: pointer;
 }
+.more:hover {
+  color: rgb(206, 206, 206);
+}
 @media (max-width: 1200px) {
   .card {
     max-width: 233.33px;
