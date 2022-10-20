@@ -33,6 +33,9 @@ body {
   justify-content: space-between;
   max-width: 447px;
 }
+.text {
+  margin-bottom: 71px;
+}
 .secondary__pics {
   display: flex;
   gap: 30px;
