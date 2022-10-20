@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+}
+header {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.todo__head {
+  max-width: 700px;
+}
+.todo__tasklist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.task {
+  border: 1px black solid;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+
+  height: 40px;
+  align-items: center;
+}
+.task-name {
+  width: 150px;
+  overflow: auto;
+  text-align: center;
+}
