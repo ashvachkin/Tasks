@@ -1,0 +1,21 @@
+.diagram {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  background: conic-gradient(from 130deg, #a2cb92 75%, #d5e5c0 61%);
+}
+.diagram__inner {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  background-color: #eff5e6;
+  margin-top: 17%;
+}
+.inner-text {
+  margin: inherit;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 43px;
+}

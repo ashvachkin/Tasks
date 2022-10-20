@@ -1,0 +1,33 @@
+.batteries {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.red__left {
+  display: flex;
+  border: 5px solid black;
+  background: linear-gradient(to right, red 25%, white 25%);
+  width: 25%;
+  height: 100px;
+}
+.orange__left {
+  border: 5px solid black;
+  background: linear-gradient(to right, orange 60%, white 50%);
+  width: 25%;
+  height: 100px;
+}
+.green__left {
+  border: 5px solid black;
+  background-color: green;
+  width: 25%;
+  height: 100px;
+}
+.right {
+  background-color: black;
+  height: 45px;
+  width: 1%;
+}
+.batteries__element {
+  display: flex;
+  align-items: center;
+}
