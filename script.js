@@ -1,7 +1,7 @@
 const taskListInput = document.querySelector(".todo__input");
 const addTask = document.querySelector(".add-button");
 const todoList = document.querySelector(".todo__tasklist");
-const tasks = [];
+const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 const createTodo = (item) => `
  <div class='task' id = ${item.id}>
@@ -18,6 +18,10 @@ const render = () => {
     todoList.innerHTML += createTodo(element);
   });
 };
+
+window.onload = () => {
+  render();
+};
 const createItem = (event) => {
   if (
     (event.type === "click" || event.key === "Enter") &&
@@ -32,6 +36,7 @@ const createItem = (event) => {
     item.label = taskListInput.value.trim().replace(/^ +| +$|( ) +/g, "$1");
     taskListInput.value = "";
     tasks.push(item);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
     render();
   }
 };
@@ -48,6 +53,7 @@ const editTask = (event) => {
     tasks[elementID].label = editInput.value
       .trim()
       .replace(/^ +| +$|( ) +/g, "$1");
+    localStorage.setItem("tasks", JSON.stringify(tasks));
     render();
   };
 
@@ -69,6 +75,16 @@ const deleteTask = (event) => {
     (elem) => elem.id === Number(event.target.parentElement.id)
   );
   tasks.splice(task, 1);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+  render();
+};
+const checkTask = (event) => {
+  const task = tasks.find(
+    (elem) => elem.id === Number(event.target.parentElement.id)
+  );
+  task.status = !task.status;
+  tasks.sort((a, b) => (a.status > b.status ? 1 : -1));
+  localStorage.setItem("tasks", JSON.stringify(tasks));
   render();
 };
 const eventCheck = (event) => {
