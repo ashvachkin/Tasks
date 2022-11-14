@@ -1,0 +1,82 @@
+body {
+  font-family: "Roboto Condensed";
+}
+header {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+}
+.full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  gap: 5%;
+  width: 900px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.input__where {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#where {
+  height: 35px;
+  width: 400px;
+}
+.input__howmuch {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#how-much {
+  height: 35px;
+}
+.input__button {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border-radius: 15%;
+}
+.input__button:hover {
+  background-color: rgb(0, 183, 255);
+  color: rgb(255, 255, 255);
+}
+.sum {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.expenses {
+  display: flex;
+  flex-direction: column;
+}
+.expense {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template: 84px/18px 219px 85px 206px 55px 6px;
+  border: 1px solid black;
+  width: 635px;
+  padding: 11px;
+}
+#trash {
+  width: 30px;
+  height: 40px;
+}
+#pencil {
+  width: 30px;
+  height: 40px;
+}
+#pencil:hover {
+  fill: aqua;
+}
